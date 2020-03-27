@@ -275,6 +275,7 @@ pub use self::{
     subscription::{Event, Subscriber},
     transaction::Transactional,
     tree::{CompareAndSwapError, Tree},
+    metrics::M,
 };
 
 use {
@@ -286,7 +287,7 @@ use {
         histogram::Histogram,
         lru::Lru,
         meta::Meta,
-        metrics::{clock, Measure, M},
+        metrics::{clock, Measure},
         node::{Data, Node},
         oneshot::{OneShot, OneShotFiller},
         result::CasResult,
